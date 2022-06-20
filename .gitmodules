@@ -1,6 +1,0 @@
-[submodule "themes/showfolio"]
-	path = themes/showfolio
-	url = https://github.com/apvarun/showfolio-hugo-theme.git
-[submodule "themes/ananke"]
-	path = themes/ananke
-	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
