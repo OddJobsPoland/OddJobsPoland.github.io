@@ -1,3 +1,11 @@
+* {
+    text-align: center;
+}
+
+body {
+    text-align: center;
+}
+
 html, body {
     background-color: #3edea8;
     margin:0;
