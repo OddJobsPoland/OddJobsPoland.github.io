@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+<body>
+    <div id="blog-posts"></div>
+</body>
+</html>
+<script></script>
+fetch('blog_posts.json')
+  .then(response => response.json())
+  .then(data => {
+    let output = '';
+    data.forEach(post => {
+      output += `
+        <div class="blog-post">
+          <h2>${post.title}</h2>
+          <p>${post.content}</p>
+          <p><em>By ${post.author} on ${post.date}</em></p>
+        </div>
+      `;
+    });
+    document.querySelector('#blog-posts').innerHTML = output;
+  })
+  .catch(error => console.error(error));
+</script>
