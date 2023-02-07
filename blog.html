@@ -1,72 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog</title>
-  <style>
-    .header {
-      height: 100px;
-      background-color: rgb(105, 240, 174);
-      margin: 0;
-      display: flex;
-      align-items: center;
-    }
-    .logo {
-      height: 100px;
-      width: 100px;
-      background-image: url(logo.png);
-      background-size: cover;
-      margin-left: 20px;
-    }
-    .blog-posts {
-      text-align: left;
-      margin: 5% 20%;
-    }
-    .footer {
-      height: 100px;
-      background-color: rgb(105, 240, 174);
-      display: flex;
-    }
-    .footer .column {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-    }
-    .footer .column:first-of-type {
-      width: 150px;
-      margin-left: 20px;
-    }
-    .footer .column:last-of-type {
-      margin-left: 80px;
-    }
-    @media (max-width: 768px) {
-      .blog-posts {
-        margin: 5% 4%;
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Roboto", sans-serif;
       }
-    }
-  </style>
+      .header-top-bar {
+        height: 100px;
+        background-color: rgb(105, 240, 174);
+        display: flex;
+        align-items: center;
+      }
+      .header-logo {
+        width: 100px;
+        height: 100px;
+        background-image: url('./logo.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: 20px;
+      }
+      .blog-post {
+        text-align: left;
+        margin: 5% auto;
+      }
+      @media only screen and (min-width:768px) {
+        .blog-post {
+          margin: 5% 20%;
+        }
+      }
+      .footer {
+        height: 100px;
+        background-color: rgb(105, 240, 174);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 80px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+      .footer-col {
+        width: 150px;
+      }
+    </style>
 </head>
 <body>
-  <header class="header">
-    <div class="logo"></div>
-  </header>
-  <div id="blog-posts" class="blog-posts"></div>
-  <footer class="footer">
-    <div class="column">
+  <div class="header-top-bar">
+    <div class="header-logo"></div>
+  </div>
+  <div id="blog-posts"></div>
+  <div class="footer">
+    <div class="footer-col">
       <p>Paragraph 1</p>
       <p>Paragraph 2</p>
       <p>Paragraph 3</p>
       <p>Paragraph 4</p>
     </div>
-    <div class="column">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+    <div class="footer-col">
+      <a href="#">Link 1</a><br>
+      <a href="#">Link 2</a><br>
+      <a href="#">Link 3</a><br>
       <a href="#">Link 4</a>
     </div>
-  </footer>
+  </div>
 </body>
 </html>
 <script>
@@ -86,4 +87,4 @@ fetch('blog_posts.json')
     document.querySelector('#blog-posts').innerHTML = output;
   })
   .catch(error => console.error(error));
-</script>
+</script
