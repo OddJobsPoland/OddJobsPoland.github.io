@@ -6,11 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <style>
+      .header-top-bar {
+        height: 100px;
+        background-color: rgb(105, 240, 174);
+        display: flex;
+        align-items: center;
+      }
+      .header-logo {
+        width: 100px;
+        height: 100px;
+        background-image: url('./images/logo1000.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: 20px;
+      }
       .blog-post {
         text-align: center;
         margin: 5% auto;
       }
-
       @media only screen and (min-width:768px) {
         .blog-post {
           margin: 5% 20%;
@@ -19,7 +32,10 @@
     </style>
 </head>
 <body>
-    <div id="blog-posts"></div>
+  <div class="header-top-bar">
+    <div class="header-logo"></div>
+  </div>
+  <div id="blog-posts"></div>
 </body>
 </html>
 <script>
