@@ -12,14 +12,14 @@
       }
       .header-top-bar {
         height: 100px;
-        background-color: rgb(105, 240, 174);
+        background-color: rgba(61,222,168,255);
         display: flex;
         align-items: center;
       }
       .header-logo {
         width: 100px;
         height: 100px;
-        background-image: url('./logo.png');
+        background-image: url('./images/logo1000.png');
         background-repeat: no-repeat;
         background-size: contain;
         margin-left: 20px;
@@ -34,8 +34,8 @@
         }
       }
       .footer {
-        height: 100px;
-        background-color: rgb(105, 240, 174);
+        height: 180px;
+        background-color: rgba(61,222,168,255);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -87,4 +87,4 @@ fetch('blog_posts.json')
     document.querySelector('#blog-posts').innerHTML = output;
   })
   .catch(error => console.error(error));
-</script
+</script>
