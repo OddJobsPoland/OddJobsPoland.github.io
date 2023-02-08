@@ -9,6 +9,7 @@
       body {
         margin: 0;
         font-family: "Roboto", sans-serif;
+        overflow-x: hidden;
       }
       .header-top-bar {
         height: 100px;
@@ -38,15 +39,19 @@
         background-color: rgba(61,222,168,255);
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: left;
         padding: 0 80px;
         position: absolute;
         bottom: 0;
         width: 100%;
       }
       .footer-col {
-        width: 150px;
+        width: 140px;
       }
+      .footer_paragraph {
+    color: lightgray;
+    font-size: 12px;
+  }
     </style>
 </head>
 <body>
@@ -54,28 +59,36 @@
     <div class="header-logo"></div>
   </div>
   <div id="blog-posts">
-    Regulamin dla Użytkowników Aplikacji do Szukania Pracy OddJobs
-
-1. Definicje:
-
-Aplikacja: oznacza aplikację do szukania pracy OddJobs, której Użytkownikiem jest Użytkownik.
-Użytkownik: oznacza osobę fizyczną lub prawną korzystającą z Aplikacji.
-Konto: oznacza konto Użytkownika utworzone w Aplikacji.
-Dane osobowe: oznacza informacje dotyczące identyfikującej lub identyfikowalnej osoby fizycznej, takie jak imię i nazwisko, adres, numer telefonu, adres e-mail itp.
-
-2. Celem Aplikacji jest umożliwienie Użytkownikom znalezienia odpowiedniej oferty pracy, oraz dodawanie ofert pracy i kontakt z kandydatami.
-
-3. Konto Użytkownika:
-
-Utworzenie konta jest warunkiem korzystania z Aplikacji.
-Użytkownik zobowiązany jest do podania prawdziwych i aktualnych danych osobowych podczas rejestracji.
-Użytkownik jest zobowiązany do zachowania poufności swojego hasła do konta.
-Użytkownik odpowiada za wszelkie aktywności wykonywane z jego konta.
-
-4. Zasady korzystania z Aplikacji:
-
-Użytkownik zobowiązany jest do korzystania z Aplikacji zgodnie z obowiązującym prawem oraz niniejszym regulaminem.
-Użytkownik nie może wykorzystywać Aplikacji w celach niezgodnych z jej przeznaczeniem.
+    <ol style="list-style-type: dotted;">
+        <li>
+          <strong>Regulamin dla Użytkowników Aplikacji do Szukania Pracy OddJobs</strong>
+          <ol>
+            <li>
+              <strong>Definicje:</strong>
+              <ul>
+                <li>Aplikacja: oznacza aplikację do szukania pracy OddJobs, której Użytkownikiem jest Użytkownik.</li>
+                <li>Użytkownik: oznacza osobę fizyczną lub prawną korzystającą z Aplikacji.</li>
+                <li>Konto: oznacza konto Użytkownika utworzone w Aplikacji.</li>
+                <li>Dane osobowe: oznacza informacje dotyczące identyfikującej lub identyfikowalnej osoby fizycznej, takie jak imię i nazwisko, adres, numer telefonu, adres e-mail itp.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Celem Aplikacji</strong> jest umożliwienie Użytkownikom znalezienia odpowiedniej oferty pracy, oraz dodawanie ofert pracy i kontakt z kandydatami.
+            </li>
+            <li>
+              <strong>Konto Użytkownika:</strong>
+              <ul>
+                <li>Utworzenie konta jest warunkiem korzystania z Aplikacji.</li>
+                <li>Użytkownik zobowiązany jest do podania prawdziwych i aktualnych danych osobowych podczas rejestracji.</li>
+                <li>Użytkownik jest zobowiązany do zachowania poufności swojego hasła do konta.</li>
+                <li>Użytkownik odpowiada za wszelkie aktywności wykonywane z jego konta.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Zasady korzystania z Aplikacji:</strong>
+              <ul>
+                <li>Użytkownik zobowiązany jest do korzystania z Aplikacji zgodnie z obowiązującym prawem oraz niniejszym regulaminem.</li>
+                <li>Użytkownik nie może wykorzystywać Aplikacji w celach niezgodnych z jejprzeznaczeniem.
 Użytkownik nie może publikować treści nieodpowiednich, obraźliwych lub niezgodnych z prawem.
 Aplikacja zastrzega sobie prawo do usuwania treści niezgodnych z regulaminem bez uprzedniego powiadomienia Użytkownika.
 
@@ -114,16 +127,16 @@ Niniejszy regulamin stanowi integralną część umowy pomiędzy Aplikacją a U�
   </div>
   <div class="footer">
     <div class="footer-col">
-      <p>Paragraph 1</p>
-      <p>Paragraph 2</p>
-      <p>Paragraph 3</p>
-      <p>Paragraph 4</p>
+      <p class="footer_paragraph">OddJobs P.S.A.</p>
+      <p class="footer_paragraph">KRS 0000978184 NIP 5342652317 REGON 522369534</p>
+      <p class="footer_paragraph">Matejki 9, 05-090 Raszyn</p>
+      <p class="footer_paragraph">kontakt@oddjobs.pl</p>
     </div>
     <div class="footer-col">
-      <a href="#">Link 1</a><br>
-      <a href="#">Link 2</a><br>
-      <a href="#">Link 3</a><br>
-      <a href="#">Link 4</a>
+      <a href="/blog.html"">Blog</a><br>
+      <a href="/praca.html">Oferty pracy</a><br>
+      <a href="/prywatnosc.html">Regulamin</a><br>
+      <a href="/index.html">Strona główna</a>
     </div>
   </div>
 </body>
