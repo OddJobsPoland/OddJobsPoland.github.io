@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OddJobs - Blog</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+        overflow-x: hidden;
+      }
+      .header-top-bar {
+        height: 100px;
+        background-color: rgba(61,222,168,255);
+        display: flex;
+        align-items: center;
+      }
+      .header-logo {
+        width: 100px;
+        height: 100px;
+        background-image: url('https://oddjobspoland.github.io/images/logo1000.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: 20px;
+      }
+      .blog-post {
+        text-align: left;
+        margin: 5% auto;
+      }
+      @media only screen and (min-width:768px) {
+        .blog-post {
+          margin: 5% 20%;
+        }
+      }
+      .footer {
+        height: 180px;
+        background-color: rgba(61,222,168,255);
+        display: flex;
+        justify-content: left;
+        align-items: center;
+      
+        position: inherit;
+        bottom: 0;
+        width: 100%;
+      }
+      .footer-col {
+        width: 140px;
+        margin: 0 10%;
+      }
+      .footer_paragraph {
+    color: rgb(233, 233, 233);
+    font-size: 12px;
+  }
+  .footer a {
+      color: #fecc35;
+      font-weight: bolder;
+      font-size: 12px;
+      text-decoration: none;
+      margin: 7px 0;}
+    </style>
+</head>
+<body>
+  <div class="header-top-bar">
+    <div class="header-logo">
+</div>
+  </div>
+  <div id="blog-posts">
+<div class="blog-post">
+          <h2>Email template</h2>
+          <p>Email contents</p>
+          <p><em>Pozdrawiam, Jakub Wichliński</em></p>
+        </div>
+</div>
+  <div class="footer">
+    <div class="footer-col">
+      <p class="footer_paragraph">OddJobs P.S.A.</p>
+      <p class="footer_paragraph">KRS 0000978184 NIP 5342652317 REGON 522369534</p>
+      <p class="footer_paragraph">Matejki 9, 05-090 Raszyn</p>
+      <p class="footer_paragraph">kontakt@oddjobs.pl</p>
+    </div>
+    <div class="footer-col">
+      <a href="/blog.html"">Blog</a><br>
+      <a href="/praca.html">Oferty pracy</a><br>
+      <a href="/prywatnosc.html">Regulamin</a><br>
+      <a href="/index.html">Strona główna</a>
+    </div>
+  </div>
+</body>
+</html>
