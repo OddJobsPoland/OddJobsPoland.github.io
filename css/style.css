@@ -1,0 +1,86 @@
+header {
+  width: 100vw;
+  height: 100vh;
+  background-color: #3edea8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.oddjobs-logo {
+  transition: transform 0.5s ease;
+  max-width: 250px;
+  margin-bottom: 20px;
+}
+
+.logo-company-description {
+  position: absolute;
+  left: 25%;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid white;
+  transform: translateX(-50%);
+  font-size: 36px;
+}
+
+.logo-container:hover .oddjobs-logo {
+  transform: translateX(-80px); /* Move the logo to the left on hover */
+}
+
+/* Animation for typing effect on hover */
+.logo-container:hover .logo-company-description {
+  animation: typing 0.5s steps(30) forwards, fadeIn 0.75s forwards;
+  transform: translateX(120px); /* Move the text to the right on hover */
+}
+
+/* Animation for reversing the typing effect */
+.logo-container:not(:hover) .logo-company-description {
+  animation: untyping 0.5s steps(30) forwards, fadeOut 0.25s forwards;
+  transform: translateX(120px); /* Move the text to the right on hover */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 332px;
+  }
+}
+
+@keyframes untyping {
+  from {
+    width: 332px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
