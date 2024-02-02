@@ -6,11 +6,13 @@
     <title>OddJobs</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
     <script src="js/randomSentence.js"></script>
+    <script src="js/navigationButton.js"></script>
   </head>
   <body>
     <!-- Header content here -->
-    <header>
+    <header id="header-section">
       <div class="header-content">
         <div class="logo-container">
           <img src="images/logo1000.png" alt="OddJobs" class="oddjobs-logo" />
@@ -19,7 +21,7 @@
       </div>
     </header>
     <!-- Hero content here -->
-    <section class="hero">
+    <section class="hero" id="hero-section">
       <h1 class="hero-title">Inkluzja w świecie pracy</h2>
       <p class="hero-subtitle">
         Nasza misja to eliminacja barier i tworzenie miejsc pracy dostępnych dla wszystkich.
@@ -27,8 +29,15 @@
       </p>
     </section>
     <!-- About content here -->
-    <section id="about"></section>
+    <section id="about-section"></section>
     <!-- Footer content here -->
-    <footer></footer>
+    <footer id="footer-section"></footer>
+
+    <button class="learn-more" id="navigate-button">
+      <span class="circle" aria-hidden="true">
+      <span class="icon arrow"></span>
+      </span>
+      <span class="button-text">Explore</span>
+    </button>  
   </body>
 </html>
