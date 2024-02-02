@@ -1,7 +1,39 @@
+/*Variables*/
+:root {
+  --header-bg-colog: #3edea8;
+  --hero-section-bg-color: #00d3ff;
+  --typing-bg-color: var(--hero-section-bg-color);
+  --typing-speed: 3s;
+  --typing-characters: 35;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p,
+span,
+a {
+  font-family: "Roboto", sans-serif;
+}
+
 header {
   width: 100vw;
   height: 100vh;
-  background-color: #3edea8;
+  background-color: var(--header-bg-colog);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,13 +86,13 @@ header {
     width: 0;
   }
   to {
-    width: 332px;
+    width: 367px;
   }
 }
 
 @keyframes untyping {
   from {
-    width: 332px;
+    width: 367px;
   }
   to {
     width: 0;
@@ -83,4 +115,101 @@ header {
   to {
     opacity: 0;
   }
+}
+
+/*
+SECTION HERO
+*/
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-color: #00d3ff;
+  text-align: center;
+  padding-block: clamp(8rem, 25vh, 20rem);
+}
+
+.hero h1 {
+  font-size: 4em;
+  margin-bottom: 0.25em;
+  color: white;
+  position: relative;
+}
+
+.hero p {
+  font-size: 2em;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.hero h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hero h1::before {
+  background: var(--typing-bg-color);
+  animation: typewriter var(--typing-speed) steps(var(--typing-characters)) 1s
+    forwards;
+  transform: translateX(200px); /* Move the text to the right on hover */
+}
+
+.hero h1::after {
+  width: 0.125em;
+  background: white;
+  animation: typewriter var(--typing-speed) steps(var(--typing-characters)) 1s
+      forwards,
+    blink 750ms steps(var(--typing-characters)) infinite;
+  transform: translateX(200px); /* Move the text to the right on hover */
+}
+
+.hero-subtitle {
+  color: hsl(0 0% 0% / 0.7);
+  font-size: 2rem;
+  font-weight: 400;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease calc(var(--typing-speed) + 1s) forwards;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*
+ABOUT SECTION
+*/
+#about {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 50px;
+  box-sizing: border-box;
 }
